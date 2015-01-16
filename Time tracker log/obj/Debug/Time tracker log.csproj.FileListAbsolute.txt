@@ -1,0 +1,8 @@
+D:\C#\Projects\Time tracker log\Time tracker log\obj\Debug\Time tracker log.csprojResolveAssemblyReference.cache
+D:\C#\Projects\Time tracker log\Time tracker log\obj\Debug\Time_tracker_log.Form1.resources
+D:\C#\Projects\Time tracker log\Time tracker log\obj\Debug\Time_tracker_log.Properties.Resources.resources
+D:\C#\Projects\Time tracker log\Time tracker log\obj\Debug\Time tracker log.csproj.GenerateResource.Cache
+D:\C#\Projects\Time tracker log\Time tracker log\bin\Debug\Time tracker log.exe
+D:\C#\Projects\Time tracker log\Time tracker log\bin\Debug\Time tracker log.pdb
+D:\C#\Projects\Time tracker log\Time tracker log\obj\Debug\Time tracker log.exe
+D:\C#\Projects\Time tracker log\Time tracker log\obj\Debug\Time tracker log.pdb
