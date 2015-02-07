@@ -151,7 +151,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(165, 20);
             this.textBox2.TabIndex = 4;
-            this.textBox2.Text = "\\\\lenovot420\\D\\Entry\\Entry.txt";
+            this.textBox2.Text = "E:\\Entry\\";
             // 
             // button2
             // 
@@ -279,7 +279,7 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            //this.Name = "Form1";
+            
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CT Logbook";
             this.Load += new System.EventHandler(this.Form1_Load);

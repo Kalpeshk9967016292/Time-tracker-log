@@ -21,6 +21,9 @@ namespace Time_tracker_log
         string filelocation;
         int count = 60;
 
+        
+        
+
         private void backgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
             PerformInvoke(groupBox1, () => { groupBox1.Visible = false; });
@@ -57,8 +60,9 @@ namespace Time_tracker_log
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            textBox2.AppendText("" + dateTimePicker1.Value.Date.Day.ToString() + dateTimePicker1.Value.Month.ToString() + dateTimePicker1.Value.Year.ToString());
             filelocation = textBox2.Text;
-            textBox2.Text = "Logbook";
+            //textBox2.Text = "Logbook";
             backgroundWorker1.RunWorkerAsync();
             timer1.Enabled = true;
             timer1.Start();
@@ -68,10 +72,15 @@ namespace Time_tracker_log
 
         private void button1_Click(object sender, EventArgs e)
         {
+            ReFresh();
+            
+            
+        }
+
+        private void ReFresh()
+        {
             count = 60;
             backgroundWorker1.RunWorkerAsync();
-            
-            
         }
 
         public static void PerformInvoke(Control ctrl, Action action)
@@ -95,6 +104,7 @@ namespace Time_tracker_log
             {
                 textBox2.Text = op.SafeFileName.ToString();
                 filelocation = op.FileName.ToString();
+                ReFresh();
             }
         }
 
@@ -136,7 +146,10 @@ namespace Time_tracker_log
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
             //DateTime res = 
-            this.Text = dateTimePicker1.Value.ToShortDateString();
+            string fn = dateTimePicker1.Value.Date.Day.ToString() + dateTimePicker1.Value.Month.ToString() + dateTimePicker1.Value.Year.ToString();
+            this.Text = dateTimePicker1.Value.Date.Day.ToString() + dateTimePicker1.Value.Month.ToString() + dateTimePicker1.Value.Year.ToString();
+            textBox2.Text = ("" + dateTimePicker1.Value.Date.Day.ToString() + dateTimePicker1.Value.Month.ToString() + dateTimePicker1.Value.Year.ToString());
+            ReFresh();
 
         }
 
